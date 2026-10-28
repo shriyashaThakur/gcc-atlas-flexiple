@@ -211,7 +211,7 @@ export async function POST(request: Request) {
       config: {
         systemInstruction: SYSTEM_PROMPT,
         responseMimeType: "application/json",
-        abortSignal: AbortSignal.timeout(10_000),
+        abortSignal: AbortSignal.timeout(20_000),
         temperature: 0.2,
       },
     });
