@@ -1,0 +1,1371 @@
+{
+  "meta": {
+    "name": "GCC Atlas demo data",
+    "checked_on": "2026-10-28",
+    "banner": "Demo data compiled from public sources as of 28 Oct 2026. Records marked 'pending' have not yet been opened and confirmed by the author.",
+    "confidence_rule": {
+      "High": "The company's own page or press release states the centre's existence, city and function.",
+      "Medium": "A credible press report, or company job listings that show roles in the city without stating a dedicated centre.",
+      "Low": "A single secondary source or anything not yet opened."
+    },
+    "notes": [
+      "Headcount is null everywhere unless a source states a figure; wording is kept in headcount_note.",
+      "parent_hq_country and sector are editorial labels, not taken from the cited source.",
+      "City values are standardised: Bengaluru, Hyderabad, Pune, Chennai, Delhi NCR, Mumbai.",
+      "Microsoft appears twice (Hyderabad and NCR) and shares group_id 'microsoft'.",
+      "Rents and per-city GCC counts are mostly unavailable; the Advisor must say so rather than estimate.",
+      "Registry is skewed to Hyderabad and Bengaluru; Mumbai has no verified records yet."
+    ],
+    "advisor_goals_supported": [
+      {
+        "id": "momentum",
+        "label": "Most recent GCC momentum",
+        "uses": "signals, registry"
+      },
+      {
+        "id": "depth",
+        "label": "Deepest office market",
+        "uses": "city leasing absorption"
+      },
+      {
+        "id": "supply",
+        "label": "Most new office supply",
+        "uses": "city leasing new supply"
+      },
+      {
+        "id": "peers",
+        "label": "Most peers in my sector",
+        "uses": "registry by sector and city"
+      },
+      {
+        "id": "incentives",
+        "label": "Strongest state GCC incentives",
+        "uses": "city policy (GCC-specific only)"
+      }
+    ]
+  },
+  "registry": [
+    {
+      "id": "microsoft-hyderabad",
+      "company": "Microsoft",
+      "group_id": "microsoft",
+      "parent_hq_country": "United States",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Technology",
+      "primary_function": "Engineering/R&D",
+      "year_established": 1998,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Microsoft's India Development Center was set up in Hyderabad in 1998 and is one of its largest R&D centres outside Redmond.",
+      "source_name": "Microsoft India Development Center",
+      "source_url": "https://www.microsoft.com/en-in/msidc",
+      "source_type": "company",
+      "source_date": null,
+      "confidence": "High",
+      "confidence_reason": "Company page states the Hyderabad centre, 1998 establishment and R&D function.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "microsoft-ncr",
+      "company": "Microsoft",
+      "group_id": "microsoft",
+      "parent_hq_country": "United States",
+      "city": "Delhi NCR",
+      "other_cities": [],
+      "sector": "Technology",
+      "primary_function": "Engineering/R&D",
+      "year_established": 2021,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Microsoft launched its NCR India Development Center in 2021 for engineering across AI, cloud, productivity tools, core services and gaming.",
+      "source_name": "Microsoft News India",
+      "source_url": "https://news.microsoft.com/en-in/microsoft-launches-its-new-engineering-hub-in-ncr/",
+      "source_type": "press",
+      "source_date": "2021-01-28",
+      "confidence": "High",
+      "confidence_reason": "Company press release states the NCR centre, launch year and engineering functions.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "target-bengaluru",
+      "company": "Target",
+      "group_id": "target",
+      "parent_hq_country": "United States",
+      "city": "Bengaluru",
+      "other_cities": [],
+      "sector": "Retail/CPG",
+      "primary_function": "Digital/IT",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "Careers page says the Bengaluru office collaborates with '5,000+ fellow professionals'; no exact headcount stated.",
+      "summary": "Target describes its Bengaluru office as a fully integrated global capability center supporting technology, operations, marketing and process innovation.",
+      "source_name": "Target Careers",
+      "source_url": "https://corporate.target.com/careers/career-areas/global",
+      "source_type": "company",
+      "source_date": null,
+      "confidence": "High",
+      "confidence_reason": "Company careers page identifies Bengaluru as a global capability center and states its functions.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "sap-bengaluru",
+      "company": "SAP Labs India",
+      "group_id": "sap",
+      "parent_hq_country": "Germany",
+      "city": "Bengaluru",
+      "other_cities": [],
+      "sector": "Technology",
+      "primary_function": "Engineering/R&D",
+      "year_established": 1998,
+      "headcount": null,
+      "headcount_note": "SAP's 2025 release says more than 17,000 SAP employees in India; no Bengaluru-only headcount.",
+      "summary": "SAP opened its second Bengaluru campus in 2025 and describes India as its largest R&D hub outside Germany.",
+      "source_name": "SAP News Center",
+      "source_url": "https://news.sap.com/2025/08/sap-labs-india-bengaluru-second-campus/",
+      "source_type": "press",
+      "source_date": "2025-08-15",
+      "confidence": "High",
+      "confidence_reason": "Company press release confirms the Bengaluru campus, R&D role and India-wide employee figure.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "bosch-bengaluru",
+      "company": "Bosch Global Software Technologies",
+      "group_id": "bosch",
+      "parent_hq_country": "Germany",
+      "city": "Bengaluru",
+      "other_cities": [],
+      "sector": "Manufacturing/Automotive",
+      "primary_function": "Engineering/R&D",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "Bosch says the subsidiary has more than 20,000 software specialists at its Indian locations; no Bengaluru-only headcount.",
+      "summary": "Bosch Global Software Technologies is headquartered in Bengaluru and develops software and AI solutions for automotive, manufacturing and healthcare.",
+      "source_name": "Bosch",
+      "source_url": "https://www.bosch.com/stories/india-growth-market-technology-software-mobility/",
+      "source_type": "company",
+      "source_date": "2026-04-07",
+      "confidence": "High",
+      "confidence_reason": "Company article states the Bengaluru headquarters, software-hub role and sectors served.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "amazon-hyderabad",
+      "company": "Amazon",
+      "group_id": "amazon",
+      "parent_hq_country": "United States",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Technology",
+      "primary_function": "Engineering/R&D",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "A 2020 Amazon release cites 15,000 employees in the Hyderabad campus building; this is a building-level figure, not a verified GCC headcount.",
+      "summary": "Amazon's official India workplace page identifies Hyderabad as home to its largest corporate building worldwide and its first owned office building outside the United States.",
+      "source_name": "About Amazon India",
+      "source_url": "https://www.aboutamazon.in/workplace",
+      "source_type": "company",
+      "source_date": null,
+      "confidence": "High",
+      "confidence_reason": "Company page confirms the Hyderabad campus; functions and establishment year not stated.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "airbus-bengaluru",
+      "company": "Airbus",
+      "group_id": "airbus",
+      "parent_hq_country": "France",
+      "city": "Bengaluru",
+      "other_cities": [],
+      "sector": "Manufacturing/Automotive",
+      "primary_function": "Digital/IT",
+      "year_established": 2018,
+      "headcount": null,
+      "headcount_note": "Company site cites more than 1,500 IT professionals.",
+      "summary": "Airbus's Bengaluru digital centre covers digital and IT capabilities; established 2018.",
+      "source_name": "Airbus company site",
+      "source_url": "https://www.airbus.com/en/about-us/our-worldwide-presence/airbus-in-asia-pacific/airbus-in-india/digital-centre",
+      "source_type": "company",
+      "source_date": null,
+      "confidence": "High",
+      "confidence_reason": "Company page states the Bengaluru digital centre, year and size.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "fidelity-bengaluru",
+      "company": "Fidelity Investments",
+      "group_id": "fidelity",
+      "parent_hq_country": "United States",
+      "city": "Bengaluru",
+      "other_cities": [],
+      "sector": "BFSI",
+      "primary_function": "Digital/IT",
+      "year_established": 2003,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Fidelity says it set up its India GCC in 2003, covering technology, operations, analytics and research.",
+      "source_name": "Fidelity careers page",
+      "source_url": "https://jobs.fidelity.com/in/",
+      "source_type": "company",
+      "source_date": null,
+      "confidence": "High",
+      "confidence_reason": "Company careers page states the India GCC and its year; the city is Bengaluru per the earlier source file.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "jnj-bengaluru",
+      "company": "Johnson & Johnson",
+      "group_id": "jnj",
+      "parent_hq_country": "United States",
+      "city": "Bengaluru",
+      "other_cities": [],
+      "sector": "Healthcare/Pharma",
+      "primary_function": "Shared services",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Global services centre for finance, HR, data analytics, computational science and legal.",
+      "source_name": "J&J careers page",
+      "source_url": "https://www.careers.jnj.com/en/locations/asia-pacific/india/",
+      "source_type": "company",
+      "source_date": null,
+      "confidence": "Medium",
+      "confidence_reason": "Company careers location page lists functions; city and centre status not independently confirmed.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "caterpillar-chennai",
+      "company": "Caterpillar",
+      "group_id": "caterpillar",
+      "parent_hq_country": "United States",
+      "city": "Chennai",
+      "other_cities": [],
+      "sector": "Manufacturing/Automotive",
+      "primary_function": "Engineering/R&D",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Caterpillar's careers site lists Chennai engineering roles in engine design, embedded software, systems integration and mining technology.",
+      "source_name": "Caterpillar Careers",
+      "source_url": "https://careers.caterpillar.com/en/jobs/r0000401755/design-engineer/",
+      "source_type": "company",
+      "source_date": "2026-10-26",
+      "confidence": "Medium",
+      "confidence_reason": "Company careers or job listings show roles in this city; no explicit statement of a dedicated centre.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "standardchartered-chennai",
+      "company": "Standard Chartered",
+      "group_id": "standardchartered",
+      "parent_hq_country": "United Kingdom",
+      "city": "Chennai",
+      "other_cities": [],
+      "sector": "BFSI",
+      "primary_function": "Shared services",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Standard Chartered's careers site shows Chennai roles in Global Business Services, including operations, finance, risk and technology services.",
+      "source_name": "Standard Chartered Careers",
+      "source_url": "https://jobs.standardchartered.com/job/Chennai-2026-GCFO-Capital-&-Liquidity-CA-Intern-GBS-India/46345-en_GB/",
+      "source_type": "company",
+      "source_date": "2026-03-02",
+      "confidence": "Medium",
+      "confidence_reason": "Company careers or job listings show roles in this city; no explicit statement of a dedicated centre.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "ford-chennai",
+      "company": "Ford Business Solutions",
+      "group_id": "ford",
+      "parent_hq_country": "United States",
+      "city": "Chennai",
+      "other_cities": [],
+      "sector": "Manufacturing/Automotive",
+      "primary_function": "Digital/IT",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Ford's careers site describes Ford Business Solutions India as a global technology and business-services hub and lists Chennai technology, data and engineering roles.",
+      "source_name": "Ford Careers",
+      "source_url": "https://www.careers.ford.com/en/india",
+      "source_type": "company",
+      "source_date": null,
+      "confidence": "High",
+      "confidence_reason": "Company careers page describes the India hub; Chennai city from listed roles.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "apple-hyderabad",
+      "company": "Apple",
+      "group_id": "apple",
+      "parent_hq_country": "United States",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Technology",
+      "primary_function": "Digital/IT",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Apple's India careers site lists Hyderabad roles in Information Systems and Technology, including enterprise software and platform engineering.",
+      "source_name": "Apple Jobs",
+      "source_url": "https://jobs.apple.com/en-in/search?location=india-INDC",
+      "source_type": "company",
+      "source_date": "2026-09-19",
+      "confidence": "Medium",
+      "confidence_reason": "Company careers or job listings show roles in this city; no explicit statement of a dedicated centre.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "google-hyderabad",
+      "company": "Google",
+      "group_id": "google",
+      "parent_hq_country": "United States",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Technology",
+      "primary_function": "Engineering/R&D",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Google's careers site maintains a Hyderabad location page and lists Hyderabad roles across Ads, Cloud and related product and engineering functions.",
+      "source_name": "Google Careers",
+      "source_url": "https://careers.google.com/locations/hyderabad/",
+      "source_type": "company",
+      "source_date": null,
+      "confidence": "Medium",
+      "confidence_reason": "Company careers or job listings show roles in this city; no explicit statement of a dedicated centre.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "novartis-hyderabad",
+      "company": "Novartis",
+      "group_id": "novartis",
+      "parent_hq_country": "Switzerland",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Healthcare/Pharma",
+      "primary_function": "Shared services",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Novartis's India careers site lists Hyderabad roles across clinical development, data science, IT, finance, quality and procurement.",
+      "source_name": "Novartis Careers",
+      "source_url": "https://www.novartis.com/in-en/careers/career-search?country[0]=LOC_IN&field_alternative_country[0]=LOC_IN",
+      "source_type": "company",
+      "source_date": "2026-10-27",
+      "confidence": "Medium",
+      "confidence_reason": "Company careers or job listings show roles in this city; no explicit statement of a dedicated centre.",
+      "manual_check": "pending",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "msd-hyderabad",
+      "company": "MSD",
+      "group_id": "msd",
+      "parent_hq_country": "United States",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Healthcare/Pharma",
+      "primary_function": "Engineering/R&D",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Opened an expanded technology centre of 250,000 sq ft in Hitec City; the centre first launched in 2025.",
+      "source_name": "Biospectrum India",
+      "source_url": "https://biospectrumindia.com/news/16/28451/msd-inaugurates-expanded-hyderabad-tech-centre.html",
+      "source_type": "press",
+      "source_date": "2026-09-10",
+      "confidence": "Medium",
+      "confidence_reason": "Credible press report only; no company page opened.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "jll-hyderabad",
+      "company": "JLL Business Services",
+      "group_id": "jll",
+      "parent_hq_country": "United States",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Professional services",
+      "primary_function": "Shared services",
+      "year_established": 2026,
+      "headcount": null,
+      "headcount_note": "Newsroom cites 1,600 employees in two years.",
+      "summary": "Inaugurated a 120,000 sq ft GCC for JLL Business Services, its second India hub after Gurugram.",
+      "source_name": "JLL newsroom",
+      "source_url": "https://www.jll.com/en-in/newsroom/jll-inaugrates-120000-sq-ft-gcc-in-hyderabad",
+      "source_type": "company",
+      "source_date": "2026-08-06",
+      "confidence": "High",
+      "confidence_reason": "Company newsroom states the new centre, city and size.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "magnum-pune",
+      "company": "The Magnum Ice Cream Company",
+      "group_id": "magnum",
+      "parent_hq_country": "Netherlands",
+      "city": "Pune",
+      "other_cities": [],
+      "sector": "Retail/CPG",
+      "primary_function": "Shared services",
+      "year_established": 2026,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Inaugurated a 67,000 sq ft GCC for finance, procurement, supply chain, marketing and master data; a state MoU was signed in April 2025.",
+      "source_name": "Company press release",
+      "source_url": "https://news.magnumicecream.com/the-magnum-ice-cream-company-inaugurates-new-global-capability-centre-in-pune/",
+      "source_type": "company",
+      "source_date": "2026-09-04",
+      "confidence": "High",
+      "confidence_reason": "Company press release states the centre, city and functions.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "blackbaud-hyderabad",
+      "company": "Blackbaud",
+      "group_id": "blackbaud",
+      "parent_hq_country": "United States",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Technology",
+      "primary_function": "Shared services",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Opened a second Hyderabad office of 45,000 sq ft in the Financial District, mainly for customer operations.",
+      "source_name": "Company press release",
+      "source_url": "https://www.blackbaud.com/newsroom/article/blackbaud-expands-hyderabad-presence-with-second-office-as-india-operations-continue-to-grow",
+      "source_type": "company",
+      "source_date": "2026-08-31",
+      "confidence": "High",
+      "confidence_reason": "Company press release states the office, city and function.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "digikey-bengaluru",
+      "company": "DigiKey",
+      "group_id": "digikey",
+      "parent_hq_country": "United States",
+      "city": "Bengaluru",
+      "other_cities": [],
+      "sector": "Technology",
+      "primary_function": "Shared services",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Opened a new Whitefield office that houses DigiKey India's GCC.",
+      "source_name": "Circuit Digest",
+      "source_url": "https://circuitdigest.com/news/digikey-india-opens-new-bengaluru-office",
+      "source_type": "press",
+      "source_date": "2026-10-05",
+      "confidence": "Medium",
+      "confidence_reason": "Credible press report only; no company page opened.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "puma-pune",
+      "company": "PUMA",
+      "group_id": "puma",
+      "parent_hq_country": "Germany",
+      "city": "Pune",
+      "other_cities": [],
+      "sector": "Retail/CPG",
+      "primary_function": "Digital/IT",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Announced a Pune GCC for AI and cloud technology work.",
+      "source_name": "ET GCC",
+      "source_url": "https://gcc.economictimes.indiatimes.com/amp/news/workplace-transformation/puma-establishes-global-capability-centre-in-pune-to-enhance-digital-engineering/132702619",
+      "source_type": "press",
+      "source_date": "2026-07-29",
+      "confidence": "Medium",
+      "confidence_reason": "Credible press report only; no company page opened.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "southwest-hyderabad",
+      "company": "Southwest Airlines",
+      "group_id": "southwest",
+      "parent_hq_country": "United States",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Transportation",
+      "primary_function": "Digital/IT",
+      "year_established": 2026,
+      "headcount": null,
+      "headcount_note": "Reported plan of 1,000 tech hires.",
+      "summary": "Opened its first centre outside the United States, focused on AI, analytics and cybersecurity.",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "source_type": "press",
+      "source_date": "2026-05-20",
+      "confidence": "Medium",
+      "confidence_reason": "Credible press report only; no company page opened.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "cohere-hyderabad",
+      "company": "Cohere Health",
+      "group_id": "cohere",
+      "parent_hq_country": "United States",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Healthcare/Pharma",
+      "primary_function": "Digital/IT",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "Reported plan of about 350 people over 6-7 quarters.",
+      "summary": "Announced a Hyderabad centre for clinical AI in health-plan operations.",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "source_type": "press",
+      "source_date": "2026-02-26",
+      "confidence": "Medium",
+      "confidence_reason": "Credible press report only; no company page opened.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "arcelormittal-hyderabad",
+      "company": "ArcelorMittal",
+      "group_id": "arcelormittal",
+      "parent_hq_country": "Luxembourg",
+      "city": "Hyderabad",
+      "other_cities": [
+        "Pune"
+      ],
+      "sector": "Manufacturing/Automotive",
+      "primary_function": "Shared services",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "Reported hiring plan of about 2,000 professionals across cities.",
+      "summary": "Plans to hire across Hyderabad and Pune as its AMGBT operations scale in phases.",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "source_type": "press",
+      "source_date": null,
+      "confidence": "Medium",
+      "confidence_reason": "Credible press report only; no company page opened.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "merck-bengaluru",
+      "company": "Merck Group",
+      "group_id": "merck",
+      "parent_hq_country": "Germany",
+      "city": "Bengaluru",
+      "other_cities": [],
+      "sector": "Healthcare/Pharma",
+      "primary_function": "Engineering/R&D",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "Reported 3,300 professionals planned at the campus.",
+      "summary": "Developing an integrated campus at Electronic City.",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "source_type": "press",
+      "source_date": null,
+      "confidence": "Medium",
+      "confidence_reason": "Credible press report only; no company page opened.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "basf-hyderabad",
+      "company": "BASF",
+      "group_id": "basf",
+      "parent_hq_country": "Germany",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Manufacturing/Automotive",
+      "primary_function": "Digital/IT",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "",
+      "summary": "Establishing a Global Digital Hub and a Global Service Hub for finance and HR.",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "source_type": "press",
+      "source_date": null,
+      "confidence": "Medium",
+      "confidence_reason": "Credible press report only; no company page opened.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "heineken-hyderabad",
+      "company": "HEINEKEN",
+      "group_id": "heineken",
+      "parent_hq_country": "Netherlands",
+      "city": "Hyderabad",
+      "other_cities": [],
+      "sector": "Retail/CPG",
+      "primary_function": "Shared services",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "Reported size of 76,000 sq ft.",
+      "summary": "Setting up its first Asia-Pacific centre for finance, procurement, supply chain, HR, digital and data.",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "source_type": "press",
+      "source_date": null,
+      "confidence": "Medium",
+      "confidence_reason": "Credible press report only; no company page opened.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    },
+    {
+      "id": "lg-ncr",
+      "company": "LG Electronics",
+      "group_id": "lg",
+      "parent_hq_country": "South Korea",
+      "city": "Delhi NCR",
+      "other_cities": [],
+      "sector": "Manufacturing/Automotive",
+      "primary_function": "Engineering/R&D",
+      "year_established": null,
+      "headcount": null,
+      "headcount_note": "Reported 500 jobs for the Phase II campus.",
+      "summary": "Planning a Rs 1,000 crore Phase II campus in Noida on seven acres.",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "source_type": "press",
+      "source_date": null,
+      "confidence": "Medium",
+      "confidence_reason": "Credible press report only; no company page opened.",
+      "manual_check": "done",
+      "last_checked": "2026-10-28"
+    }
+  ],
+  "signals": [
+    {
+      "company_id": "msd-hyderabad",
+      "company": "MSD",
+      "city": "Hyderabad",
+      "date": "2026-09-10",
+      "type": "Expansion",
+      "summary": "Opened an expanded 250,000 sq ft technology centre in Hitec City.",
+      "scale": "",
+      "source_name": "Biospectrum India",
+      "source_url": "https://biospectrumindia.com/news/16/28451/msd-inaugurates-expanded-hyderabad-tech-centre.html",
+      "checked": true,
+      "inference": "Fit-out, facilities and AV for a large campus."
+    },
+    {
+      "company_id": "jll-hyderabad",
+      "company": "JLL",
+      "city": "Hyderabad",
+      "date": "2026-08-06",
+      "type": "New centre",
+      "summary": "Inaugurated a 120,000 sq ft GCC for JLL Business Services.",
+      "scale": "1,600 employees in two years",
+      "source_name": "JLL newsroom",
+      "source_url": "https://www.jll.com/en-in/newsroom/jll-inaugrates-120000-sq-ft-gcc-in-hyderabad",
+      "checked": true,
+      "inference": "Hiring and workplace services at scale."
+    },
+    {
+      "company_id": "magnum-pune",
+      "company": "The Magnum Ice Cream Company",
+      "city": "Pune",
+      "date": "2026-09-04",
+      "type": "New centre",
+      "summary": "Inaugurated a 67,000 sq ft GCC; a state MoU was signed in April 2025.",
+      "scale": "67,000 sq ft",
+      "source_name": "Company press release",
+      "source_url": "https://news.magnumicecream.com/the-magnum-ice-cream-company-inaugurates-new-global-capability-centre-in-pune/",
+      "checked": true,
+      "inference": "The MoU came about 17 months before opening, an early signal."
+    },
+    {
+      "company_id": "blackbaud-hyderabad",
+      "company": "Blackbaud",
+      "city": "Hyderabad",
+      "date": "2026-08-31",
+      "type": "Expansion",
+      "summary": "Opened a second Hyderabad office, mainly for customer operations.",
+      "scale": "45,000 sq ft",
+      "source_name": "Company press release",
+      "source_url": "https://www.blackbaud.com/newsroom/article/blackbaud-expands-hyderabad-presence-with-second-office-as-india-operations-continue-to-grow",
+      "checked": true,
+      "inference": "Customer-operations hiring and managed services."
+    },
+    {
+      "company_id": "digikey-bengaluru",
+      "company": "DigiKey",
+      "city": "Bengaluru",
+      "date": "2026-10-05",
+      "type": "Expansion",
+      "summary": "Opened a new Whitefield office housing DigiKey India's GCC.",
+      "scale": "",
+      "source_name": "Circuit Digest",
+      "source_url": "https://circuitdigest.com/news/digikey-india-opens-new-bengaluru-office",
+      "checked": true,
+      "inference": "Office services and local hiring."
+    },
+    {
+      "company_id": "puma-pune",
+      "company": "PUMA",
+      "city": "Pune",
+      "date": "2026-07-29",
+      "type": "New centre",
+      "summary": "Announced a Pune GCC for AI and cloud technology work.",
+      "scale": "",
+      "source_name": "ET GCC",
+      "source_url": "https://gcc.economictimes.indiatimes.com/amp/news/workplace-transformation/puma-establishes-global-capability-centre-in-pune-to-enhance-digital-engineering/132702619",
+      "checked": true,
+      "inference": "Engineering hiring and workspace set-up."
+    },
+    {
+      "company_id": "southwest-hyderabad",
+      "company": "Southwest Airlines",
+      "city": "Hyderabad",
+      "date": "2026-05-20",
+      "type": "New centre",
+      "summary": "Opened its first centre outside the United States, focused on AI, analytics and cybersecurity.",
+      "scale": "1,000 tech hires planned",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "checked": true,
+      "inference": "Large technology recruitment."
+    },
+    {
+      "company_id": "cohere-hyderabad",
+      "company": "Cohere Health",
+      "city": "Hyderabad",
+      "date": "2026-02-26",
+      "type": "New centre",
+      "summary": "Announced a Hyderabad centre for clinical AI in health-plan operations.",
+      "scale": "about 350 people over 6-7 quarters",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "checked": true,
+      "inference": "Phased healthcare-AI hiring."
+    },
+    {
+      "company_id": "arcelormittal-hyderabad",
+      "company": "ArcelorMittal",
+      "city": "Hyderabad and Pune",
+      "date": null,
+      "type": "Hiring plan",
+      "summary": "Plans to hire across Hyderabad and Pune as AMGBT operations scale in phases.",
+      "scale": "about 2,000 professionals",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "checked": true,
+      "inference": "Multi-city recruitment programme."
+    },
+    {
+      "company_id": "merck-bengaluru",
+      "company": "Merck Group",
+      "city": "Bengaluru",
+      "date": null,
+      "type": "Expansion",
+      "summary": "Developing an integrated campus at Electronic City.",
+      "scale": "3,300 professionals",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "checked": true,
+      "inference": "Campus fit-out and large-scale hiring."
+    },
+    {
+      "company_id": "basf-hyderabad",
+      "company": "BASF",
+      "city": "Hyderabad",
+      "date": null,
+      "type": "New centre",
+      "summary": "Establishing a Global Digital Hub and a Global Service Hub for finance and HR.",
+      "scale": "",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "checked": true,
+      "inference": "Two hubs means set-up and staffing demand."
+    },
+    {
+      "company_id": "heineken-hyderabad",
+      "company": "HEINEKEN",
+      "city": "Hyderabad",
+      "date": null,
+      "type": "New centre",
+      "summary": "Setting up its first Asia-Pacific centre for finance, procurement, supply chain, HR, digital and data.",
+      "scale": "76,000 sq ft",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "checked": true,
+      "inference": "Shared-services set-up."
+    },
+    {
+      "company_id": "lg-ncr",
+      "company": "LG Electronics",
+      "city": "Delhi NCR",
+      "date": null,
+      "type": "Expansion",
+      "summary": "Planning a Rs 1,000 crore Phase II campus on seven acres in Noida.",
+      "scale": "500 jobs",
+      "source_name": "Businessworld, via TradingView",
+      "source_url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/",
+      "checked": true,
+      "inference": "Construction, fit-out and local hiring."
+    },
+    {
+      "company_id": null,
+      "company": "Woodside Energy",
+      "city": "Bengaluru",
+      "date": "2026-09-16",
+      "type": "New centre",
+      "summary": "Reported opening a Bengaluru GCC. Link not yet opened.",
+      "scale": "",
+      "source_name": "ET GCC",
+      "source_url": "https://gcc.economictimes.indiatimes.com/news/workplace-transformation/woodside-energy-opens-bengaluru-global-capability-centre/134288381",
+      "checked": false,
+      "inference": ""
+    },
+    {
+      "company_id": null,
+      "company": "Arctic Wolf",
+      "city": "Bengaluru",
+      "date": "2026-09-09",
+      "type": "Expansion",
+      "summary": "Reported expanding its Bengaluru R&D hub. Link not yet opened.",
+      "scale": "",
+      "source_name": "ET GCC",
+      "source_url": "https://gcc.economictimes.indiatimes.com/news/workplace-transformation/arctic-wolf-makes-bengaluru-its-largest-global-rd-hub-expands-again/133966446",
+      "checked": false,
+      "inference": ""
+    },
+    {
+      "company_id": null,
+      "company": "DePuy Synthes",
+      "city": "Bengaluru",
+      "date": "2026-08-07",
+      "type": "New centre",
+      "summary": "Reported plans for a Bengaluru GCC with 500 hires over two years. Link not yet opened.",
+      "scale": "500 hires",
+      "source_name": "ET GCC",
+      "source_url": "https://gcc.economictimes.indiatimes.com/news/workplace-transformation/depuy-synthes-to-establish-bengaluru-gcc-plans-to-hire-500-over-two-years/133035140",
+      "checked": false,
+      "inference": ""
+    },
+    {
+      "company_id": null,
+      "company": "Edwards Lifesciences",
+      "city": "Pune",
+      "date": "2026-08-04",
+      "type": "New centre",
+      "summary": "Reported a new technology hub in India. Link not yet opened.",
+      "scale": "",
+      "source_name": "ET GCC",
+      "source_url": "https://gcc.economictimes.indiatimes.com/news/industry-trends/edwards-lifesciences-expands-engineering-footprint-with-new-tech-hub-in-india/132852450",
+      "checked": false,
+      "inference": ""
+    },
+    {
+      "company_id": null,
+      "company": "Cloudangles",
+      "city": "Hyderabad",
+      "date": "2026-08-13",
+      "type": "New centre",
+      "summary": "Reported opening a global engineering centre. Link not yet opened.",
+      "scale": "",
+      "source_name": "PTI",
+      "source_url": "https://www.ptinews.com/detail/business/US-based-Cloudangles-opens-GEC-in-Hyderabad/3963291",
+      "checked": false,
+      "inference": ""
+    }
+  ],
+  "cities": [
+    {
+      "city": "Bengaluru",
+      "policy": {
+        "name": "Karnataka Global Capability Centre (GCC) Policy 2024-29",
+        "scope": "GCC-specific",
+        "year": 2024,
+        "key_incentives": [
+          "Rental assistance for new GCC units",
+          "Internship stipend reimbursement of 50% up to INR 5,000",
+          "Customised incentive package for mega projects"
+        ],
+        "url": "https://eitbt.karnataka.gov.in/181/gcc-policy-2024---incentives/en"
+      },
+      "leasing_q3_2026": {
+        "cbre_absorption_msf": 4.9,
+        "cw_gross_msf": 5.2,
+        "cw_net_absorption_msf": 4.0,
+        "cbre_new_supply_msf": 3.9,
+        "top_sectors": "Technology 23%, engineering 17%",
+        "cbre_share_of_national_gcc_leasing_pct": null,
+        "sources": [
+          "https://www.cbre.co.in/insights/figures/india-office-figures-q3-2026",
+          "https://www.cushmanwakefield.com/en/india/news/2026/10/india-office-market-growth-in-q3-2026"
+        ],
+        "note": "Three figures from two brokers; definitions differ."
+      },
+      "rent": null,
+      "gcc_count": [
+        {
+          "value": 487,
+          "unit": "GCCs",
+          "source": "Vestian, 2025",
+          "note": "29% of India's GCCs"
+        },
+        {
+          "value": 500,
+          "unit": "GCCs",
+          "source": "Karnataka government, 2026",
+          "note": "over 500, via Flexiple stats page"
+        },
+        {
+          "value": 900,
+          "unit": "units",
+          "source": "JLL India, 2026",
+          "note": "over 900 units, via Flexiple stats page"
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "policy": {
+        "name": "Telangana ICT Policy Framework 2016",
+        "scope": "General IT/ITeS (not GCC-specific)",
+        "year": 2016,
+        "key_incentives": [
+          "Support for R&D centres via IT/ITeS investor incentives",
+          "Incentives for IT/ITeS expansion"
+        ],
+        "url": "https://it.telangana.gov.in/downloads/"
+      },
+      "leasing_q3_2026": {
+        "cbre_absorption_msf": 5.3,
+        "cw_gross_msf": 4.2,
+        "cw_net_absorption_msf": 4.1,
+        "cbre_new_supply_msf": 10.2,
+        "top_sectors": "Financial services 50%, flexible space 24%",
+        "cbre_share_of_national_gcc_leasing_pct": 37,
+        "sources": [
+          "https://www.cbre.co.in/insights/figures/india-office-figures-q3-2026",
+          "https://www.cushmanwakefield.com/en/india/news/2026/10/india-office-market-growth-in-q3-2026"
+        ],
+        "note": "CBRE city figure (5.3) still needs checking against the PDF."
+      },
+      "rent": null,
+      "gcc_count": [
+        {
+          "value": 40,
+          "unit": "new GCCs",
+          "source": "ENN Business via Businessworld, Jan-Aug 2026",
+          "note": "of 111 new centres"
+        },
+        {
+          "value": 150,
+          "unit": "new GCCs",
+          "source": "Telangana IT minister, last 20 months",
+          "note": "state claim; different period"
+        }
+      ]
+    },
+    {
+      "city": "Pune",
+      "policy": {
+        "name": "Maharashtra Global Capability Centre Policy 2025",
+        "scope": "GCC-specific",
+        "year": 2025,
+        "key_incentives": [
+          "Capital subsidy or rental assistance",
+          "Payroll, interest and incremental-investment incentives",
+          "R&D grants, power-tariff subsidy, electricity-duty and stamp-duty exemption",
+          "Additional FSI, reserved MIDC land, priority allotment"
+        ],
+        "url": "https://industry.maharashtra.gov.in/sites/default/files/2025-10/gcc-policy-paraesa-naota-english.pdf"
+      },
+      "leasing_q3_2026": {
+        "cbre_absorption_msf": 1.4,
+        "cw_gross_msf": 2.0,
+        "cw_net_absorption_msf": null,
+        "cbre_new_supply_msf": 2.7,
+        "top_sectors": "Flexible space 33%, financial services 27%",
+        "cbre_share_of_national_gcc_leasing_pct": null,
+        "sources": [
+          "https://www.cbre.co.in/insights/figures/india-office-figures-q3-2026",
+          "https://www.cushmanwakefield.com/en/india/news/2026/10/india-office-market-growth-in-q3-2026"
+        ],
+        "note": ""
+      },
+      "rent": null,
+      "gcc_count": []
+    },
+    {
+      "city": "Chennai",
+      "policy": {
+        "name": "Special Scheme to promote Global Capability Centres in Tamil Nadu",
+        "scope": "GCC-specific",
+        "year": 2024,
+        "key_incentives": [],
+        "url": "https://www.tn.gov.in/go.php?dep_id=MTY=&year=MjAyNA=="
+      },
+      "leasing_q3_2026": {
+        "cbre_absorption_msf": 1.9,
+        "cw_gross_msf": 2.0,
+        "cw_net_absorption_msf": null,
+        "cbre_new_supply_msf": 0.7,
+        "top_sectors": "Technology 42%, flexible space 20%",
+        "cbre_share_of_national_gcc_leasing_pct": 11,
+        "sources": [
+          "https://www.cbre.co.in/insights/figures/india-office-figures-q3-2026",
+          "https://www.cushmanwakefield.com/en/india/news/2026/10/india-office-market-growth-in-q3-2026"
+        ],
+        "note": "Incentive details not yet extracted from the government order."
+      },
+      "rent": null,
+      "gcc_count": []
+    },
+    {
+      "city": "Delhi NCR",
+      "policy": {
+        "name": "Uttar Pradesh Global Capability Centres Policy 2024",
+        "scope": "GCC-specific; applies to UP (e.g. Noida), not Haryana (Gurugram)",
+        "year": 2024,
+        "key_incentives": [
+          "25% capital subsidy up to INR 10 crore (Level-1) or INR 25 crore (Advanced)",
+          "20% operational subsidy on lease rentals, bandwidth, power and cloud costs for five years",
+          "Payroll subsidy up to INR 1.8 lakh per UP-domicile employee annually",
+          "100% stamp-duty exemption or reimbursement",
+          "5% interest subsidy on term loans"
+        ],
+        "url": "https://invest.up.gov.in/up-gcc-policy-2024/"
+      },
+      "leasing_q3_2026": {
+        "cbre_absorption_msf": 4.4,
+        "cw_gross_msf": 3.8,
+        "cw_net_absorption_msf": null,
+        "cbre_new_supply_msf": 0.9,
+        "top_sectors": "Flexible space 35%, research 24%",
+        "cbre_share_of_national_gcc_leasing_pct": 11,
+        "sources": [
+          "https://www.cbre.co.in/insights/figures/india-office-figures-q3-2026",
+          "https://www.cushmanwakefield.com/en/india/news/2026/10/india-office-market-growth-in-q3-2026"
+        ],
+        "note": ""
+      },
+      "rent": null,
+      "gcc_count": []
+    },
+    {
+      "city": "Mumbai",
+      "policy": {
+        "name": "Maharashtra Global Capability Centre Policy 2025",
+        "scope": "GCC-specific",
+        "year": 2025,
+        "key_incentives": [
+          "Capital subsidy or rental assistance",
+          "Payroll, interest and incremental-investment incentives",
+          "R&D grants, power-tariff subsidy, electricity-duty and stamp-duty exemption",
+          "Additional FSI, reserved MIDC land, priority allotment"
+        ],
+        "url": "https://industry.maharashtra.gov.in/sites/default/files/2025-10/gcc-policy-paraesa-naota-english.pdf"
+      },
+      "leasing_q3_2026": {
+        "cbre_absorption_msf": 2.6,
+        "cw_gross_msf": 3.9,
+        "cw_net_absorption_msf": null,
+        "cbre_new_supply_msf": 0.4,
+        "top_sectors": "Financial services 21%, flexible space 18%",
+        "cbre_share_of_national_gcc_leasing_pct": 5,
+        "sources": [
+          "https://www.cbre.co.in/insights/figures/india-office-figures-q3-2026",
+          "https://www.cushmanwakefield.com/en/india/news/2026/10/india-office-market-growth-in-q3-2026"
+        ],
+        "note": ""
+      },
+      "rent": null,
+      "gcc_count": []
+    }
+  ],
+  "disagreements": [
+    {
+      "title": "How many GCCs are there in India?",
+      "unit": "GCCs",
+      "why": "Reports differ in what they count: parent companies versus individual centres.",
+      "sources": [
+        {
+          "name": "Nasscom-Zinnov, FY26",
+          "value": 2117,
+          "note": "3,728 centres in total",
+          "url": "https://zinnov.com/centers-of-excellence/zinnov-nasscom-india-gcc-landscape-2026-report/"
+        },
+        {
+          "name": "Nasscom-Zinnov, FY24",
+          "value": 1700,
+          "note": "1,700+; 2,975 centres",
+          "url": "https://theprint.in/economy/indias-position-as-gcc-capital-of-the-world-nasscom-zinnov-study/2268673/"
+        },
+        {
+          "name": "CRE Matrix and JLL, 2023",
+          "value": 1790,
+          "note": "1,790+ across 1,400+ companies",
+          "url": "https://www.crematrix.com/research/report-details/158"
+        },
+        {
+          "name": "Vestian, Jul 2025",
+          "value": 1700,
+          "note": "nearly 1,700",
+          "url": "https://www.theweek.in/wire-updates/business/2025/07/21/dcm52-biz-realty-gcc.html"
+        },
+        {
+          "name": "OceanFrogs (sells contact data)",
+          "value": 2232,
+          "note": "vendor's own claim",
+          "url": "https://www.oceanfrogs.com/blogs/global-capabilty-centers/"
+        }
+      ]
+    },
+    {
+      "title": "How many GCCs does Bengaluru have?",
+      "unit": "GCCs",
+      "why": "A fivefold spread. Definitions and dates likely differ and are rarely stated.",
+      "sources": [
+        {
+          "name": "Vestian, 2025",
+          "value": 487,
+          "note": "29% of India's GCCs",
+          "url": "https://therealtytoday.com/news/expert-opinion/india-leads-global-gcc-expansion-projected-to-cross-2100-centers-by-fy28-amid-tier-2-city-surge-vestian-report"
+        },
+        {
+          "name": "Karnataka government, 2026",
+          "value": 500,
+          "note": "over 500, via Flexiple stats page",
+          "url": "https://flexiple.com/gcc/statistics"
+        },
+        {
+          "name": "ANSR research via a recruiter's post",
+          "value": 870,
+          "note": "about 870; secondary source",
+          "url": "https://in.linkedin.com/in/skatish"
+        },
+        {
+          "name": "JLL India, 2026",
+          "value": 900,
+          "note": "over 900 units, via Flexiple stats page",
+          "url": "https://flexiple.com/gcc/statistics"
+        }
+      ]
+    },
+    {
+      "title": "Hyderabad office leasing, Q3 2026",
+      "unit": "million sq ft",
+      "why": "Brokers define leasing differently. The CBRE city figure needs checking against the PDF.",
+      "sources": [
+        {
+          "name": "Cushman & Wakefield, net absorption",
+          "value": 4.1,
+          "note": "",
+          "url": "https://www.cushmanwakefield.com/en/india/news/2026/10/india-office-market-growth-in-q3-2026"
+        },
+        {
+          "name": "Cushman & Wakefield, gross leasing",
+          "value": 4.2,
+          "note": "",
+          "url": "https://www.cushmanwakefield.com/en/india/news/2026/10/india-office-market-growth-in-q3-2026"
+        },
+        {
+          "name": "Savills, gross absorption",
+          "value": 4.2,
+          "note": "",
+          "url": "https://therealtytoday.com/news/market-insights/indias-office-leasing-grows-6-to-607-million-sq-ft-in-2026-savills-india"
+        },
+        {
+          "name": "CBRE, absorption (pending check)",
+          "value": 5.3,
+          "note": "city figure unverified",
+          "url": "https://www.cbre.co.in/insights/figures/india-office-figures-q3-2026"
+        }
+      ]
+    },
+    {
+      "title": "GCC share of India's office leasing, 2026",
+      "unit": "%",
+      "why": "Periods differ (half year versus nine months), so part of the gap is timing.",
+      "sources": [
+        {
+          "name": "CBRE, H1 2026",
+          "value": 43,
+          "note": "first half",
+          "url": "https://www.newkerala.com/news/a/indian-states-target-118-million-jobs-1380-new-643.htm"
+        },
+        {
+          "name": "CBRE, nine months 2026",
+          "value": 42,
+          "note": "28 million sq ft",
+          "url": "https://www.newkerala.com/news/a/indias-office-space-absorption-surges-pc-record-664-176.htm"
+        },
+        {
+          "name": "Cushman & Wakefield, year to date",
+          "value": 39,
+          "note": "25.3 million sq ft",
+          "url": "https://www.cushmanwakefield.com/en/india/news/2026/10/india-office-market-growth-in-q3-2026"
+        }
+      ]
+    },
+    {
+      "title": "How many new GCCs has Hyderabad added?",
+      "unit": "new GCCs",
+      "why": "Different periods (8 months versus 20 months) and one is a state claim, so not directly comparable.",
+      "sources": [
+        {
+          "name": "ENN Business via Businessworld, Jan-Aug 2026",
+          "value": 40,
+          "note": "of 111 new centres",
+          "url": "https://www.tradingview.com/news/moodys:e45bfe4bca0ee:0-india-s-gcc-boom-accelerates-as-111-new-centres-open-between-january-and-august-2026/"
+        },
+        {
+          "name": "Telangana IT minister, last 20 months",
+          "value": 150,
+          "note": "nearly 150",
+          "url": "https://www.jll.com/en-in/newsroom/jll-inaugrates-120000-sq-ft-gcc-in-hyderabad"
+        }
+      ]
+    }
+  ],
+  "candidates_unverified": [
+    {
+      "company": "Siemens Technology and Services",
+      "city": "Pune",
+      "status": "unverified",
+      "reason": "Careers pages reportedly confirm Pune R&D, IT and shared services; page not opened."
+    },
+    {
+      "company": "UBS",
+      "city": "Pune",
+      "status": "unverified",
+      "reason": "Careers page reportedly confirms a Business Solutions Center; not opened."
+    },
+    {
+      "company": "FIS",
+      "city": "Pune",
+      "status": "unverified",
+      "reason": "Careers listings reportedly show Pune roles; not opened."
+    },
+    {
+      "company": "Barclays",
+      "city": "Pune",
+      "status": "unverified",
+      "reason": "Official page identified but did not visibly confirm a Pune centre."
+    },
+    {
+      "company": "Eaton",
+      "city": "Pune",
+      "status": "unverified",
+      "reason": "Official page identified but did not visibly confirm a Pune centre."
+    },
+    {
+      "company": "Nomura Services India",
+      "city": "Mumbai",
+      "status": "unverified",
+      "reason": "Careers pages reportedly confirm a Powai centre; not opened."
+    },
+    {
+      "company": "Deutsche Bank",
+      "city": "Mumbai",
+      "status": "unverified",
+      "reason": "Careers pages reportedly confirm Mumbai functions; not opened."
+    },
+    {
+      "company": "HSBC Global Services",
+      "city": "Mumbai",
+      "status": "unverified",
+      "reason": "Careers listings reportedly show Mumbai roles; not opened."
+    },
+    {
+      "company": "State Street",
+      "city": "Mumbai",
+      "status": "unverified",
+      "reason": "Careers listings reportedly show Mumbai roles; not opened."
+    },
+    {
+      "company": "JPMorgan",
+      "city": "Hyderabad / Mumbai",
+      "status": "unverified",
+      "reason": "No official page opened."
+    },
+    {
+      "company": "Walmart Global Tech",
+      "city": "Bengaluru",
+      "status": "unverified",
+      "reason": "Only a blog source found; no company page opened."
+    },
+    {
+      "company": "Wells Fargo",
+      "city": "Hyderabad",
+      "status": "unverified",
+      "reason": "No official page opened."
+    },
+    {
+      "company": "PayPal",
+      "city": "Chennai",
+      "status": "unverified",
+      "reason": "No company page opened."
+    },
+    {
+      "company": "American Express",
+      "city": "Delhi NCR",
+      "status": "unverified",
+      "reason": "No company page opened."
+    },
+    {
+      "company": "Micron Technology",
+      "city": "Hyderabad",
+      "status": "unverified",
+      "reason": "Company page could not be opened."
+    },
+    {
+      "company": "Boeing",
+      "city": "Bengaluru / Hyderabad",
+      "status": "unverified",
+      "reason": "City needs checking; company page could not be opened."
+    },
+    {
+      "company": "Salesforce",
+      "city": "Hyderabad",
+      "status": "unverified",
+      "reason": "Company page could not be opened."
+    },
+    {
+      "company": "Electronic Arts",
+      "city": "Hyderabad",
+      "status": "unverified",
+      "reason": "No company page opened."
+    },
+    {
+      "company": "Intel",
+      "city": "Bengaluru / Hyderabad",
+      "status": "unverified",
+      "reason": "City needs checking; no company page opened."
+    }
+  ]
+}
