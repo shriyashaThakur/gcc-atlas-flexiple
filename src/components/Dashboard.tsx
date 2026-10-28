@@ -12,7 +12,7 @@ export function Dashboard({ data }: { data: GccData }) {
   const [highlightCompany, setHighlightCompany] = useState<string | null>(null);
 
   return (
-    <div className="min-h-full bg-[#103E2E] text-[#F4F1E8]">
+    <div className="bg-[#103E2E] text-[#F4F1E8] rounded-3xl sm:rounded-[2.5rem] overflow-hidden shadow-2xl min-h-[calc(100vh-2rem)] sm:min-h-[calc(100vh-3rem)]">
       <header className="border-b border-[#164A38] px-4 py-4 sm:px-8">
         <p className="rounded-full border border-[#164A38] bg-[#0C2E22] px-4 py-2 text-xs leading-5 text-[#C9D4C8] sm:text-sm">
           {data.meta.banner}

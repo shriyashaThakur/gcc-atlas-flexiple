@@ -24,9 +24,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className={`${inter.className} min-h-full flex flex-col bg-[#103E2E] text-[#F4F1E8]`}>
-        {children}
-      </body>
+      <body className={`${inter.className} min-h-full bg-white p-6 md:p-12`}>
+  {children}
+</body>
+
     </html>
   );
 }
